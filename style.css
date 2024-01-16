@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+/* 
+html tags - write directly
+class - write dot first, where dot is known as the selector 
+*/
+
+body {
+    background-color: rgb(225, 225, 251);
+}
+
+.name {
+    font-family: 'Roboto Mono', monospace;
+    transition: transform 0.3s ease;
+}
+
+.name:hover {
+    color: purple;
+    text-shadow: black;
+    cursor: pointer;
+    animation: fadeIn 1s ease-out;
+    transform: scale(1.1);
+}
+
+.name2:hover {
+    color: purple;
+    text-shadow: black;
+    cursor: pointer;
+}
+
+.table1 {
+    border: 2px solid black;
+}
+
+img {
+    border-radius: 40px;
+    padding: 10px;
+    padding-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+h2:hover {
+    color: rgb(76, 76, 239);
+    text-shadow: black;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
